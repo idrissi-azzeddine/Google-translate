@@ -1,0 +1,7 @@
+{
+    "require": {
+        "stichoza/google-translate-php": "^5.1",
+        "fabpot/goutte": "^4.0",
+        "symfony/dom-crawler": "^6.2"
+    }
+}

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css"
+    rel="stylesheet"
+    />
+    <!-- MDB -->
+    <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title> NEDES </title>
+</head>
+<style>
+    select::-webkit-scrollbar {
+        width: 10px;
+    }
+    select::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+    select::-webkit-scrollbar-thumb {
+        width: 8px;
+        background-color: rgb(155, 198, 168);
+    }
+    body::-webkit-scrollbar {
+        width: 10px;
+    }
+    body::-webkit-scrollbar-track {
+        background-color: rgb(3, 97, 104);
+    }
+    body::-webkit-scrollbar-thumb {
+        width: 8px;
+        background-color: rgb(155, 198, 168);
+    }
+</style>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light " style="background-color: rgb(3, 97, 104);">
+    <!-- Container wrapper -->
+    <div class="container">
+      <!-- Navbar brand -->
+
+  
+      <!-- Toggle button -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#navbarButtonsExample"
+        aria-controls="navbarButtonsExample"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+  
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarButtonsExample">
+        <!-- Left links -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link fw-bold" style="color: rgb(222, 230, 189); font-family: 'Tilt Warp', cursive;" href="./beispiel.html">NEDES</a>
+          </li>
+        </ul>
+        <!-- Left links -->
+  
+        <div class="d-flex align-items-center">
+          <button type="button" class="btn px-3 me-2 text-light" style="background-color: rgb(222, 230, 189);">
+            Login
+          </button>
+          <button type="button" class="btn me-3 text-dark" style="background-color: rgb(222, 230, 189);">
+            Sign up for free
+          </button>
+          <a
+            class="btn btn-dark px-3"
+            href="https://github.com/idrissi-azzeddine"
+            role="button"
+            ><i class="fab fa-github"></i
+          ></a>
+        </div>
+      </div>
+      <!-- Collapsible wrapper -->
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+  <!-- Navbar -->
+  <main class="" style="background-color: rgb(3, 97, 104); height: 90vh; padding-top: 5vh;">
+    <div class="d-flex align-items-center justify-content-center flex-wrap" style="background-color: rgb(3, 97, 104); height: 10vh;">
+        <div class="relative">
+            <select data-placeholder="Choose a Language..." name="von" id="von" class="p-2 text-light text-uppercase rounded" style="width: 400px; height: 40px; background-color: rgb(4, 71, 80); outline: none; border: none;" >
+                <option value="ATD">Auto Dectect</option>
+                <option value="AF">Afrikaans</option>
+                <option value="SQ">Albanian</option>
+                <option value="AR">Arabic</option>
+                <option value="HY">Armenian</option>
+                <option value="EU">Basque</option>
+                <option value="BN">Bengali</option>
+                <option value="BG">Bulgarian</option>
+                <option value="CA">Catalan</option>
+                <option value="KM">Cambodian</option>
+                <option value="ZH">Chinese (Mandarin)</option>
+                <option value="HR">Croatian</option>
+                <option value="CS">Czech</option>
+                <option value="DA">Danish</option>
+                <option value="NL">Dutch</option>
+                <option value="EN">English</option>
+                <option value="ET">Estonian</option>
+                <option value="FJ">Fiji</option>
+                <option value="FI">Finnish</option>
+                <option value="FR">French</option>
+                <option value="KA">Georgian</option>
+                <option value="DE">German</option>
+                <option value="EL">Greek</option>
+                <option value="GU">Gujarati</option>
+                <option value="HE">Hebrew</option>
+                <option value="HI">Hindi</option>
+                <option value="HU">Hungarian</option>
+                <option value="IS">Icelandic</option>
+                <option value="ID">Indonesian</option>
+                <option value="GA">Irish</option>
+                <option value="IT">Italian</option>
+                <option value="JA">Japanese</option>
+                <option value="JW">Javanese</option>
+                <option value="KO">Korean</option>
+                <option value="LA">Latin</option>
+                <option value="LV">Latvian</option>
+                <option value="LT">Lithuanian</option>
+                <option value="MK">Macedonian</option>
+                <option value="MS">Malay</option>
+                <option value="ML">Malayalam</option>
+                <option value="MT">Maltese</option>
+                <option value="MI">Maori</option>
+                <option value="MR">Marathi</option>
+                <option value="MN">Mongolian</option>
+                <option value="NE">Nepali</option>
+                <option value="NO">Norwegian</option>
+                <option value="FA">Persian</option>
+                <option value="PL">Polish</option>
+                <option value="PT">Portuguese</option>
+                <option value="PA">Punjabi</option>
+                <option value="QU">Quechua</option>
+                <option value="RO">Romanian</option>
+                <option value="RU">Russian</option>
+                <option value="SM">Samoan</option>
+                <option value="SR">Serbian</option>
+                <option value="SK">Slovak</option>
+                <option value="SL">Slovenian</option>
+                <option value="ES">Spanish</option>
+                <option value="SW">Swahili</option>
+                <option value="SV">Swedish </option>
+                <option value="TA">Tamil</option>
+                <option value="TT">Tatar</option>
+                <option value="TE">Telugu</option>
+                <option value="TH">Thai</option>
+                <option value="BO">Tibetan</option>
+                <option value="TO">Tonga</option>
+                <option value="TR">Turkish</option>
+                <option value="UK">Ukrainian</option>
+                <option value="UR">Urdu</option>
+                <option value="UZ">Uzbek</option>
+                <option value="VI">Vietnamese</option>
+                <option value="CY">Welsh</option>
+                <option value="XH">Xhosa</option>
+                </select>
+            </div>
+            <button class="btn m-3 rounded" id="cov" style="background-color: rgb(222, 230, 189);" role="button"> <i class="fa-solid fa-repeat text-dark"></i> </button>
+            <div class="relative">
+                <select data-placeholder="Choose a Language..." name="bis" id="bis" class="p-2 text-light text-uppercase rounded" style="width: 400px; height: 40px; background-color: rgb(4, 71, 80); outline: none; border: none;" >
+                    <option value="AR">Arabic</option>
+                    <option value="AF">Afrikaans</option>
+                    <option value="SQ">Albanian</option>
+                    <option value="AR">Arabic</option>
+                    <option value="HY">Armenian</option>
+                    <option value="EU">Basque</option>
+                    <option value="BN">Bengali</option>
+                    <option value="BG">Bulgarian</option>
+                    <option value="CA">Catalan</option>
+                    <option value="KM">Cambodian</option>
+                    <option value="ZH">Chinese (Mandarin)</option>
+                    <option value="HR">Croatian</option>
+                    <option value="CS">Czech</option>
+                    <option value="DA">Danish</option>
+                    <option value="NL">Dutch</option>
+                    <option value="EN">English</option>
+                    <option value="ET">Estonian</option>
+                    <option value="FJ">Fiji</option>
+                    <option value="FI">Finnish</option>
+                    <option value="FR">French</option>
+                    <option value="KA">Georgian</option>
+                    <option value="DE">German</option>
+                    <option value="EL">Greek</option>
+                    <option value="GU">Gujarati</option>
+                    <option value="HE">Hebrew</option>
+                    <option value="HI">Hindi</option>
+                    <option value="HU">Hungarian</option>
+                    <option value="IS">Icelandic</option>
+                    <option value="ID">Indonesian</option>
+                    <option value="GA">Irish</option>
+                    <option value="IT">Italian</option>
+                    <option value="JA">Japanese</option>
+                    <option value="JW">Javanese</option>
+                    <option value="KO">Korean</option>
+                    <option value="LA">Latin</option>
+                    <option value="LV">Latvian</option>
+                    <option value="LT">Lithuanian</option>
+                    <option value="MK">Macedonian</option>
+                    <option value="MS">Malay</option>
+                    <option value="ML">Malayalam</option>
+                    <option value="MT">Maltese</option>
+                    <option value="MI">Maori</option>
+                    <option value="MR">Marathi</option>
+                    <option value="MN">Mongolian</option>
+                    <option value="NE">Nepali</option>
+                    <option value="NO">Norwegian</option>
+                    <option value="FA">Persian</option>
+                    <option value="PL">Polish</option>
+                    <option value="PT">Portuguese</option>
+                    <option value="PA">Punjabi</option>
+                    <option value="QU">Quechua</option>
+                    <option value="RO">Romanian</option>
+                    <option value="RU">Russian</option>
+                    <option value="SM">Samoan</option>
+                    <option value="SR">Serbian</option>
+                    <option value="SK">Slovak</option>
+                    <option value="SL">Slovenian</option>
+                    <option value="ES">Spanish</option>
+                    <option value="SW">Swahili</option>
+                    <option value="SV">Swedish </option>
+                    <option value="TA">Tamil</option>
+                    <option value="TT">Tatar</option>
+                    <option value="TE">Telugu</option>
+                    <option value="TH">Thai</option>
+                    <option value="BO">Tibetan</option>
+                    <option value="TO">Tonga</option>
+                    <option value="TR">Turkish</option>
+                    <option value="UK">Ukrainian</option>
+                    <option value="UR">Urdu</option>
+                    <option value="UZ">Uzbek</option>
+                    <option value="VI">Vietnamese</option>
+                    <option value="CY">Welsh</option>
+                    <option value="XH">Xhosa</option>
+                    </select>
+              </div>
+            </div>
+        </div>
+        
+    </div>
+    <article class="d-flex justify-content-center flex-wrap">
+        <div class="col-md-7 w-100 d-flex justify-content-center flex-wra">
+            <div class="p-2 w-full">
+                <div class="relative">
+                  <textarea id="message" onkeyup="tran()" placeholder="start typing.." rows="23" cols="66" name="message" style="background-color: rgb(4, 71, 80); appearance: none; resize: none; outline: none;" class="rounded p-2 border-0 text-light"></textarea>
+                </div>
+              </div>
+              <div class="p-2 w-full">
+                <div class="relative">
+                  <textarea id="repond" rows="23" cols="66" name="repond" disabled style="background-color: rgb(155, 198, 168); appearance: none; resize: none; outline: none;" class="rounded p-2 border-0 text-dark"></textarea>
+                </div>
+              </div>
+        </div>
+    </article>
+  </main>
+  <footer class="text-center text-white" style="background-color: rgb(3, 97, 104);">
+    
+  
+    <!-- Copyright -->
+    <div class="text-center p-3 text-dark border-top" style="background-color: rgb(3, 97, 104);">
+      MAKE BY
+      <a class="text-light" href="https://github.com/idrissi-azzeddine"> IDRISSI AZZEDDINE </a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <script>
+    // $(document).ready(function () {
+        var von = $('#von').val();
+        var bis = $('#bis').val();
+        var cov = '';
+        $('#cov').click(function () {
+            cov = von;
+            von = bis;
+            bis = cov;
+            console.log(bis);
+        });
+        function tran() {
+            var von = $('#von').val();
+            var bis = $('#bis').val();
+            var message = $('#message').val();
+            var repond = $('#repond').val();
+            $.ajax({
+                url: 'html.php',
+                type: 'post',
+                data: {eins: von, zwei: bis, drei: message},
+                success: function (status) {
+                    repond = $('#repond').val(status);
+                    console.log(status);
+                }
+            })
+        }
+        
+
+        // $('#jetzt').click(function () {
+        //     var von = $('#von').val();
+        //     var bis = $('#bis').val();
+        //     var message = $('#message').val();
+        //     $.ajax({
+        //         url: 'html.php',
+        //         type: 'post',
+        //         data: {eins: von, zwei: bis, drei: message},
+        //         success: function (status) {
+        //             message = $('#message').val(status);
+        //         }
+        //     })
+        // })
+    // })
+</script>
+</body>
+</html>
